@@ -1,0 +1,228 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #2c3e50;
+    padding: 15px;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.hero {
+    background: url('background-hero.jpg') no-repeat center center/cover;
+    background-color: #8faabb; /* Warna lebih lembut */
+    color: white;
+    text-align: center;
+    padding: 60px 20px; /* Kurangi padding untuk tampilan yang lebih kecil */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Kurangi tinggi hero */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Kurangi ukuran teks */
+    margin-bottom: 15px; /* Kurangi margin */
+    font-weight: 500; /* Sedikit lebih ringan untuk kesan lembut */
+}
+
+.hero p {
+    font-size: 1rem; /* Ukuran teks lebih kecil */
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 8px 20px; /* Ukuran tombol lebih kecil */
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e67e22;
+}
+
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('background-hero.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+header .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+header .btn {
+    padding: 10px 30px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #e67e22;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px; /* Tentukan lebar yang sama untuk setiap menu */
+    min-height: 400px; /* Tentukan tinggi minimal yang sama */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Buat jarak antara elemen dalam */
+    cursor: pointer; /* Ubah kursor saat di-hover */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Perbesar item menu sedikit */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan lebih besar */
+}
+
+.menu-item:active {
+    transform: scale(0.95); /* Kecilkan sedikit saat diklik, memberikan kesan ditekan */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Kurangi bayangan saat diklik */
+}
+
+.menu-item img {
+    width: 100%; /* Agar gambar memenuhi lebar elemen */
+    height: 200px; /* Tetapkan tinggi yang sama untuk semua gambar */
+    object-fit: cover; /* Agar gambar selalu sesuai ukuran tanpa distorsi */
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.menu-item .price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e67e22;
+}
+
+.menu-item .btn {
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Tambahkan margin agar tombol berada sedikit lebih jauh */
+}
+
+.menu-item .btn:hover {
+    background-color: #d35400;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        width: 100%; /* Lebar 100% pada layar kecil */
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
